@@ -5,7 +5,7 @@ import './style.css';
 
 const Option = ({ type, text, onSelected }) => {
 
-  const handleClick = (type) => {
+  const handleClick = () => {
     console.log("Tak teda asi ano.");
     onSelected(type);
   }
