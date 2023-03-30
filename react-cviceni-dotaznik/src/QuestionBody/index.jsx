@@ -6,9 +6,9 @@ const QuestionBody = ({ text, iconType }) => {
   return (
     <div className="question__body">
       <p className="question__text">
-        { text }
+        {text}
       </p>
-      <Icon type={ iconType } />
+      <Icon type={iconType} />
     </div>
   );
 };

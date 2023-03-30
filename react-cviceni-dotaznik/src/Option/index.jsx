@@ -5,9 +5,9 @@ import './style.css';
 
 const Option = ({ type, text, onSelected }) => {
 
-  const handleClick = () => {
+  const handleClick = (type) => {
     console.log("Tak teda asi ano.");
-    onSelected();
+    onSelected(type);
   }
 
   return (

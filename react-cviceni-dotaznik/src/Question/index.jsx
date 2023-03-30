@@ -3,18 +3,18 @@ import QuestionBody from '../QuestionBody/index';
 import Option from '../Option/index';
 import './style.css';
 
-const Question = ({ text }) => {
+const Question = ({ text, type }) => {
 
-  const [answered, setAnswered] = useState(false);
+  const [answer, setAnswer] = useState("symbolQuestion");
 
-  const handleSelect = () => {
-    setAnswered(true);
+  const handleSelect = (iconType) => {
+    setAnswer(iconType);
   }
 
   return (
     <div className="question">
       <QuestionBody 
-        iconType={!answered ? "symbolQuestion" : "symbolTick"}
+        iconType={answer}
         text={ text }
       />
       <div className="question__options">
